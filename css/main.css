@@ -241,7 +241,7 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
   #footer .account button {padding: 10px 100px; font-size: 1.5rem;}
 }
 @media (max-width: 768px) {
-  #footer {background: rgba(255,255,255,0.5) url(../images/link.jpg) no-repeat center center / cover;}
+  #footer {background: rgba(255,255,255,0.5) url(../images/link.jpg) no-repeat center center / cover; background-blend-mode: overlay;}
   #footer .inner h4 {font-size: 1.7rem; padding-bottom: 20px;}
   #footer .account {gap: 20px;}
   #footer .account p {font-size: 1.6rem; padding-bottom: 10px;}
