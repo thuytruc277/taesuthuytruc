@@ -5,7 +5,7 @@ $(document).ready(function () {
       responsiveWidth: 1024,
     navigation: true,
     navigationPosition: 'right',
-    // navigationTooltips: ['Welcome', 'Invitation', 'About us', 'Memories', 'Location'],
+navigationTooltips: ['Welcome', 'Invitation', 'About us', 'Memories', 'Location'],
     showActiveTooltip: true,//để chữ hiện lên thì đổi false thành true
   });
 
