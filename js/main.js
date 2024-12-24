@@ -2,7 +2,7 @@
 //fullpage 초기화
 $(document).ready(function () {
   $('#fullpage').fullpage({
-      //responsiveWidth: 1024,
+    responsiveWidth: 1024,
     navigation: true,
     navigationPosition: 'right',
 navigationTooltips: ['Welcome', 'Invitation', 'About us', 'Memories', 'Location'],
@@ -13,7 +13,7 @@ navigationTooltips: ['Welcome', 'Invitation', 'About us', 'Memories', 'Location'
   $('.fp-tooltip').eq(0).css('color', '#ffb6b6'); // Welcome
   $('.fp-tooltip').eq(1).css('color', 'white'); // Invitation
   $('.fp-tooltip').eq(2).css('color', '#ffb6b6'); // About us
-  $('.fp-tooltip').eq(3).css('color', 'white'); // Memories
+  $('.fp-tooltip').eq(3).css('color', '#ffb6b6'); // Memories
 });
 
 
