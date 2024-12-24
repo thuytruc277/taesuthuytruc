@@ -224,46 +224,26 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 
 
 
-
-
-
-
-
-
-
-
-
-.value .inner {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 0 50px;}
-.value .value_txt {width: 30%;}
-.value .value_txt p {padding-bottom: 40px; color: rgba(0,0,0,0.5);}
-.value .value_txt .btn_more {background: #000; width: 200px; text-align: center;}
-.value .value_txt .btn_more a {display: block; color: #fff; padding: 10px 0; font-family: var(--base-font); text-transform: uppercase;}
-.value .value_img {width: 50%;}
-.value .value_img img {display: block; width: 100%;}
-
-/* SECTION 3 */
-.menu {background: #f9f1ea;}
-.menu .inner {text-align: center; padding: 130px 0;}
-.menu .inner > h2::before {left: 50%; transform: translateX(-50%);}
-.menu .menu_list {display: flex; flex-wrap: wrap;}
-.menu .menu_list li {position: relative;}
-.menu .menu_list li:nth-of-type(1) {margin-top: 50px;}
-.menu .menu_list li:nth-of-type(3) {margin-top: 50px;}
-.menu .menu_list li img {display: block; width: 100%;}
-.menu .menu_list li .menu_txt {position: absolute; top: 50%; left: 50%; transform: translateX(-50%); font-size: 2.5rem; color: #fff; font-family: var(--base-font);}
-.menu .menu_list li::before {content: ""; display: block; background: #c27a34; width: 0; height: 70px; left: 50%; top: 47%; transform: translateX(-50%); position: absolute; transition: all 0.5s; opacity: 0;}
-.menu .menu_list li:hover::before {width: 100%; opacity: 1; transform: translate(-50%);}
-
-
-
-/* SECTION 4 */
-.room .inner {text-align: center; padding: 130px 0;}
-.room .inner > h2::before {left: 50%; transform: translateX(-50%);}
-.room .room_list {display: flex; flex-wrap: wrap;}
-.room .room_list li {position: relative; width: 100%; }
-.room .room_list li img {display: block; width: 100%; }
-.room .room_list li span {position: absolute; display: block; bottom: 0; left: 50%; transform: translateX(-50%); background: #fff; padding: 10px 20px 0 20px; font-size: 2rem; font-family: var(--sub-font);}
-
-
 /* FOOTER */
-#footer {background: #383431;}
+#footer .inner {text-align: center;}
+#footer .inner h4 {font-family: var(--base-font); font-size: 3rem; padding-bottom: 50px; font-weight: 400;}
+#footer .account {display: flex; justify-content: center; gap: 100px; flex-wrap: wrap;}
+#footer .account p {font-family: var(--base-font); font-size: 2rem; padding-bottom: 20px;}
+#footer .account button {background: var(--main-color); border: rgba(0,0,0,0.5) 1px solid;  padding: 10px 100px; color: #fff; font-weight: 700; font-size: 1.7rem; border-radius: 30px; cursor: pointer;}
+#footer .account dl {padding: 20px 0; border-radius: 30px; background: #fcf6f2; opacity: 0; height: 0; overflow: hidden; transition: opacity 0.3s ease, height 0.3s ease;}
+#footer .account dl dt {padding-bottom: 10px; font-weight: 700;}
+#footer .account dl.active {opacity: 1; height: auto;}
+
+@media (max-width: 1200px) {
+  #footer .inner h4 {font-size: 2rem; padding-bottom: 30px;}
+  #footer .account {gap: 50px;}
+  #footer .account p {font-size: 1.8rem; padding-bottom: 10px;}
+  #footer .account button {padding: 10px 100px; font-size: 1.5rem;}
+}
+@media (max-width: 768px) {
+  #footer {background: rgba(255,255,255,0.5) url(../images/link.jpg) no-repeat center center / cover;}
+  #footer .inner h4 {font-size: 1.7rem; padding-bottom: 20px;}
+  #footer .account {gap: 20px;}
+  #footer .account p {font-size: 1.6rem; padding-bottom: 10px;}
+  #footer .account button {padding: 10px 100px; font-size: 1.5rem;}
+}
