@@ -107,33 +107,20 @@ slides.forEach((img) => {
 
 
 
+/* footer section */
+document.querySelectorAll("#footer .account button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const dl = button.nextElementSibling; // Chọn <dl> trong cùng div
+    const allDl = document.querySelectorAll("#footer .account dl"); // Tất cả <dl>
 
+    // Ẩn tất cả các <dl> trước
+    allDl.forEach((item) => {
+      if (item !== dl) {
+        item.classList.remove("active");
+      }
+    });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MENU slide */
-const menu_list = new Swiper('.menu_list', {
-  slidesPerView: 4,
-  spaceBetween: 20,
+    // Bật/tắt lớp active cho <dl> hiện tại
+    dl.classList.toggle("active");
+  });
 });
-
-
