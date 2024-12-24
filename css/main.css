@@ -95,6 +95,15 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 }
 
 
+@keyframes ball {
+  0% {}
+  100% {opacity: 0; transform: translateY(18px);}
+}
+
+.scroll {position: absolute; left: 50%; transform: translateX(-50%); bottom: 50px; color: #fff; text-transform: uppercase;}
+.box {display: block; width: 26px; height: 40px; border: #fff 1px solid; border-radius: 30px; margin: 0 auto;}
+.ball {display: block; width: 8px; height: 8px; background: #fff; border-radius: 50%; position: absolute; left: calc(50% - 4px); top: 9px; animation: ball 2s infinite;}
+
 
 /* SECTION 2 - invitation*/
 
