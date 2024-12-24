@@ -2,6 +2,7 @@
 //fullpage 초기화
 $(document).ready(function () {
   $('#fullpage').fullpage({
+      responsiveWidth: 1024,
     navigation: true,
     navigationPosition: 'right',
     // navigationTooltips: ['Welcome', 'Invitation', 'About us', 'Memories', 'Location'],
