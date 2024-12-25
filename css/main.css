@@ -225,8 +225,8 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 
 
 /* FOOTER */
-#footer {position: relative; padding: 50px 0;}
-#footer .inner {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+#footer {padding: 50px 0 0;}
+#footer .inner {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 20px;}
 #footer .footer_img {width: 30%;}
 #footer .footer_img img {display: block; width: 100%; border-radius: 30px;}
 #footer .footer_txt {width: 65%; text-align: center;}
@@ -238,7 +238,7 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 #footer .account dl {padding: 20px 0; border-radius: 30px; background: #fcf6f2; opacity: 0; height: 0; overflow: hidden; transition: opacity 0.3s ease, height 0.3s ease;}
 #footer .account dl dt {padding-bottom: 10px; font-weight: 700;}
 #footer .account dl.active {opacity: 1; height: auto;}
-#footer .thanks {position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; padding: 30px; background: linear-gradient(to right, #555, #333); color: #fff;}
+#footer .thanks {text-align: center; max-width: 100%; padding: 30px; background: linear-gradient(to right, #555, #333); color: #fff;}
 #footer .thanks > p {opacity: 0.8;}
 #footer .thanks .copy {font-style: italic; padding-top: 5px;}
 #footer .thanks > p.copy::before {content: "\2764"; font-size: 20px; margin-right: 10px; vertical-align: middle; color: #fff;}
@@ -252,15 +252,15 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
   #footer .footer_txt h4 {font-size: 2rem; padding-bottom: 30px;}
 }
 @media (max-width: 768px) {
-  #footer {padding: 10px 0 50px;}
+  #footer {padding: 30px 0 0;}
   #footer .footer_txt h4 {font-size: 1.6rem; padding-bottom: 10px;}
   #footer .account {gap: 5px;}
-  #footer .inner {justify-content: center;}
+  #footer .inner {justify-content: center; margin-bottom: 10px;}
   #footer .account p {font-size: 1.6rem; padding-bottom: 10px;}
   #footer .account dl {padding: 5px 0;}
   #footer .account button {padding: 10px 100px; font-size: 1.5rem;}
   #footer .footer_img {width: 60%;}
-  #footer .footer_txt {width: 100%; padding: 10px 0 30px;}
-  #footer .thanks {padding: 10px; font-size: 1.2rem;}
+  #footer .footer_txt {width: 100%; padding: 30px 0;}
+  #footer .thanks {padding: 10px; font-size: 1.3rem;}
 }
 
