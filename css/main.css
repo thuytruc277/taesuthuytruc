@@ -260,7 +260,7 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
   #footer .account dl {padding: 5px 0;}
   #footer .account button {padding: 10px 100px; font-size: 1.5rem;}
   #footer .footer_img {width: 60%;}
-  #footer .footer_txt {width: 100%; padding: 30px 0;}
+  #footer .footer_txt {width: 100%; padding: 10px 0 30px;}
   #footer .thanks {padding: 10px; font-size: 1.2rem;}
 }
 
