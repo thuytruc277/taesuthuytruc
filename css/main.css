@@ -76,7 +76,7 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 }
 @media (max-width: 768px) {
   .visual .visual_txt {top: 40%;}
-  .visual .visual_txt h3 {font-size: 2.5rem; font-weight: 700;}
+  .visual .visual_txt h3 {font-size: 2rem; font-weight: 700;}
   .visual .visual_txt p {display: none;}
   .visual .visual_txt::before {display: none;}
 }
