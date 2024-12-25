@@ -1,14 +1,14 @@
 @charset "utf-8";
 :root {
-  --main-font: "Noto Sans KR", sans-serif;
-  --sub-font: "Montserrat", sans-serif;
-  --base-font: "Montaga", serif;
+  --main-font:"Bai Jamjuree", sans-serif; 
+  --sub-font: "Great Vibes", sans-serif;
+  --base-font: "Italianno", serif;
   --main-color: #ffb6b6;
 }
 
 
 /* set up cơ bản cho main */
-body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1.5; color: #333; }
+body {font-family: 'Bai Jamjuree', sans-serif; font-size: 1.6rem; line-height: 1.5; color: #333; }
 .wrap {overflow-x: hidden;}
 .inner {max-width: 1600px; margin: 0 auto; padding: 0 20px;}
 
@@ -59,38 +59,38 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 .visual {background: url(../images/bg4.png) no-repeat center center / cover; position: relative;}
 .visual video {position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover;}
 .visual .visual_txt {position: absolute; left: 50%; top: 20vw; transform: translate(-50%); color: #fff; text-align: center; }
-.visual .visual_txt h3 {font-size: 3.5rem; line-height: 1.2; padding-bottom: 10px; font-family: var(--base-font); font-weight: 400; animation: txtAni_h2 6s infinite;}
-.visual .visual_txt p {font-size: 2.5rem; font-weight: 200; animation: txtAni_p 6s infinite; }
+.visual .visual_txt h3 {font-size: 6rem; line-height: 1.2; padding-bottom: 10px; font-family: var(--base-font); animation: txtAni_h2 6s infinite;}
+.visual .visual_txt p {font-size:4rem; font-weight: 200; animation: txtAni_p 6s infinite; font-family: var(--base-font);}
 
 .visual .visual_txt::before {content: ""; display: block; width: 0; height: 100px; background: var(--main-color); position: absolute; left: 50%; bottom: 0; opacity: 0; transition: all 0.5s;}
 .visual .visual_txt:hover::before {opacity: 0.3; width: 100%; transform: translate(-50%);}
 
 @media (max-width: 1400px) {
-  .visual .visual_txt h3 {font-size: 3rem;}
-  .visual .visual_txt p {font-size: 2rem;}
+  .visual .visual_txt h3 {font-size: 5rem;}
+  .visual .visual_txt p {font-size: 3.5rem;}
 }
 @media (max-width: 1180px) {
   .visual .visual_txt {top: 28vw; }
-  .visual .visual_txt h3 {font-size: 2.5rem;}
-  .visual .visual_txt p {font-size: 1.7rem;}
+  .visual .visual_txt h3 {font-size: 4rem;}
+  .visual .visual_txt p {font-size: 3rem;}
 }
 @media (max-width: 768px) {
   .visual .visual_txt {top: 40%;}
-  .visual .visual_txt h3 {font-size: 2rem; font-weight: 700;}
+  .visual .visual_txt h3 {font-size: 3.5rem; font-weight: 700;}
   .visual .visual_txt p {display: none;}
   .visual .visual_txt::before {display: none;}
 }
 
 
 
-.section h2 {font-family: var(--base-font); font-size: 3.5rem; font-weight: 400; position: relative; padding-bottom: 30px;}
+.section h2 {font-family: var(--sub-font); font-size: 4rem; font-weight: 400; position: relative; padding-bottom: 30px;}
 .section h2::before {content: "Taesu & Thuy Truc"; position: absolute; font-size: 1.5rem; top: -30px; color: #fff; font-family: var(--sub-font); letter-spacing: 3px;}
 @media (max-width: 1180px) {
-  .section h2 {font-size: 2.7rem;}
+  .section h2 {font-size: 3.5rem;}
   .section h2::before {font-size: 1.4rem; top: -20px;}
 }
 @media (max-width: 768px) {
-  .section h2 {font-size: 2.2rem;}
+  .section h2 {font-size: 2.8rem;}
   .section h2::before {font-size: 1.3rem; top: -20px;}
 }
 
@@ -121,7 +121,7 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 .invitation {background: var(--main-color)}
 .invitation .inner {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
 .invitation .invi_txt {width: 40%;}
-.invitation .invi_txt .invi_info > li {font-family: var(--base-font); position: relative; display: flex; border-top: 1px solid rgba(255,255,255,0.8); font-size: 2.5rem; align-items: center; padding: 20px 0; color: rgba(255,255,255,0.9);}
+.invitation .invi_txt .invi_info > li {font-family: var(--main-font); position: relative; display: flex; border-top: 1px solid rgba(255,255,255,0.8); font-size: 2.5rem; align-items: center; padding: 20px 0; color: rgba(255,255,255,0.9);}
 .invitation .invi_txt .invi_info > li strong {color: darkred; animation: fadeInRight 1.5s ease-in-out infinite;}
 .invitation .invi_txt .invi_info > li:last-child {border-bottom: 1px solid rgba(255,255,255,0.5); }
 .invitation .invi_txt .invi_info > li span {display: inline-block; font-size: 2rem; position: absolute; top: 50%; transform: translateY(-50%); left: 160px; color: rgba(255,255,255,1);}
@@ -142,7 +142,7 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
   .invitation .inner {padding: 60px 0 50px; gap: 30px;}
   .invitation .invi_txt {width: 100%; text-align: center; padding: 0 20px;}
   .invitation .invi_list {width: 100%;}
-  .invitation .invi_txt .invi_info > li {font-size: 1.9rem; padding: 10px 0;}
+  .invitation .invi_txt .invi_info > li {font-size: 1.7rem; padding: 10px 0;}
   .invitation .invi_txt .invi_info > li > span {font-size: 1.6rem; text-align: left; left: 100px;}
   .invitation .invi_txt > h2 {padding-bottom: 10px;}
   .invitation .invi_txt > h2::before {left: 50%; transform: translateX(-50%);}
@@ -205,7 +205,7 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 }
 .location {background: #fcf6f2; text-align: center; padding: 50px; flex-wrap: wrap;}
 .location .inner  > h2::before {left: 50%; transform: translateX(-50%); color: #ffb6b6;}
-.location .guide {padding: 30px; text-align: left; font-family: var(--base-font); position: relative; margin-top: 20px;}
+.location .guide {padding: 30px; text-align: left; position: relative; margin-top: 20px;}
 .location .icon_car {position: absolute; width: 65px; height: 30px; top: 0; left: 0; animation: moveCar 5s linear infinite;}
 .location .icon_car img {display: block; width: 100%;}
 
@@ -224,18 +224,19 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 
 
 
+
 /* FOOTER */
 #footer {position: relative; padding: 50px 0;}
 #footer .inner {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
 #footer .footer_img {width: 30%;}
 #footer .footer_img img {display: block; width: 100%; border-radius: 30px;}
 #footer .footer_txt {width: 65%; text-align: center;}
-#footer .footer_txt h4 {font-family: var(--base-font); font-size: 3rem; padding-bottom: 50px; font-weight: 400;}
+#footer .footer_txt h4 {font-family: var(--base-font); font-size: 5rem; padding-bottom: 50px; font-weight: 400;}
 #footer .footer_txt h4::before {content: "\2764"; font-size: 20px; margin-right: 10px; vertical-align: middle; color: var(--main-color)}
 #footer .account {display: flex; justify-content: center; gap: 100px; flex-wrap: wrap; margin-bottom: 20px;}
-#footer .account p {font-family: var(--base-font); font-size: 2rem; padding-bottom: 20px;}
+#footer .account p {font-family: var(--base-font); font-size: 4rem; padding-bottom: 20px;}
 #footer .account button {background: var(--main-color); border: rgba(0,0,0,0.5) 1px solid;  padding: 10px 100px; color: #fff; font-weight: 700; font-size: 1.7rem; border-radius: 30px; cursor: pointer;}
-#footer .account dl {padding: 20px 0; border-radius: 30px; background: #fcf6f2; opacity: 0; height: 0; overflow: hidden; transition: opacity 0.3s ease, height 0.3s ease;}
+#footer .account dl {padding: 20px; border-radius: 30px; background: #fcf6f2; opacity: 0; height: 0; overflow: hidden; transition: opacity 0.3s ease, height 0.3s ease;}
 #footer .account dl dt {padding-bottom: 10px; font-weight: 700;}
 #footer .account dl.active {opacity: 1; height: auto;}
 #footer .thanks {position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; padding: 30px; background: linear-gradient(to right, #555, #333); color: #fff;}
@@ -245,22 +246,21 @@ body {font-family: "Noto Sans KR", sans-serif; font-size: 1.6rem; line-height: 1
 
 
 @media (max-width: 1200px) {
-  #footer .footer_txt h4 {font-size: 2rem; padding-bottom: 30px;}
-  #footer .account {gap: 50px;}
-  #footer .account p {font-size: 1.8rem; padding-bottom: 10px;}
+  #footer .footer_txt h4 {font-size: 4rem; padding-bottom: 30px;}
+  #footer .account {gap: 30px;}
+  #footer .account p {font-size: 3rem; padding-bottom: 10px;}
   #footer .account button {padding: 10px 100px; font-size: 1.5rem;}
   #footer .footer_txt h4 {font-size: 2rem; padding-bottom: 30px;}
 }
 @media (max-width: 768px) {
   #footer {padding: 10px 0 50px;}
-  #footer .footer_txt h4 {font-size: 1.6rem; padding-bottom: 10px;}
+  #footer .footer_txt h4 {font-size: 3rem; padding-bottom: 10px;}
   #footer .account {gap: 5px;}
   #footer .inner {justify-content: center;}
-  #footer .account p {font-size: 1.6rem; padding-bottom: 10px;}
+  #footer .account p {font-size: 2.5rem; padding-bottom: 10px;}
   #footer .account dl {padding: 5px 0;}
   #footer .account button {padding: 10px 100px; font-size: 1.5rem;}
   #footer .footer_img {width: 60%;}
   #footer .footer_txt {width: 100%; padding: 30px 0;}
   #footer .thanks {padding: 10px; font-size: 1.3rem;}
 }
-
